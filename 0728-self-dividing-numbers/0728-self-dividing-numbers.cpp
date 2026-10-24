@@ -1,8 +1,8 @@
 class Solution {
 public:
-   bool check(string s,int n)
+   bool check(int t,int n)
    {
-    int t=stoi(s);
+   
     while(t)
     {
         int re=t%10;
@@ -18,8 +18,8 @@ public:
         vector<int>ans;
         for(int i=left;i<=right;i++)
         {
-            string s=to_string(i);
-            if(check(s,i))
+            
+            if(check(i,i))
             {
                 ans.push_back(i);
             }
