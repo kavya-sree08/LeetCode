@@ -8,11 +8,12 @@ public:
             if(nums1[i]<=nums2[j])
             {
                 ans=max(ans,j-i);
+                j++;
                
             }
             else if(nums1[i]>nums2[j])
             i++;
-            j++;
+            
         }
         return ans;
     }
